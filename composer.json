@@ -1,0 +1,15 @@
+{
+  "name": "vendor_name/wptest",
+  "description": "description",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Romal",
+      "email": "ukr.opa@gmail.com"
+    }
+  ],
+  "require": {
+    "": ""
+  }
+}

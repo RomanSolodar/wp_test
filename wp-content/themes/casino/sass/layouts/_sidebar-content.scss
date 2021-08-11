@@ -11,6 +11,10 @@
 	grid-area: header;
 }
 
+.site-branding {
+	padding: 100px 0;
+}
+
 .site-main {
 	grid-area: main;
 	overflow: hidden; /* Resolves issue with <pre> elements forcing full width. */
