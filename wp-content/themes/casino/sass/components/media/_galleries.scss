@@ -8,6 +8,32 @@
 	display: inline-block;
 	text-align: center;
 	width: 100%;
+	max-width: 415px;
+	height: 627px;
+	background: #fff;
+	color: #5B5B5B;
+	font-size: 15px;
+	position: relative;
+}
+.undertitle {
+	color:#fff;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	text-align: center;
+}
+.undertitle span {
+	color: #fff;
+	display: inline-flex;
+	width: 321px;
+	height: 53px;
+	background: #B90000;
+	vertical-align: top;
+	align-items: center;
+	justify-content: center;
+	border-radius: 0 0 45px 45px;
+	font-size: 23px;
+	//font-family: 'Montserrat';
 }
 
 // Loops to enumerate the classes for gallery columns.

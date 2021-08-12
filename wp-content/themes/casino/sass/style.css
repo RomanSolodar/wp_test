@@ -79,6 +79,9 @@ body {
  */
 main {
   display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
 }
 
 /**
@@ -86,8 +89,9 @@ main {
  * `article` contexts in Chrome, Firefox, and Safari.
  */
 h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
+  font-size: 1.66em;
+  margin: 1em 0 0.1em;
+  font-weight: 400;
 }
 
 /* Grouping content
@@ -389,8 +393,8 @@ optgroup,
 textarea {
   color: #fff;
   font-family: -apple-system, Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-  font-size: 1rem;
-  font-size: 1rem;
+  font-size: 25px;
+  font-size: 1.563rem;
   line-height: 1.5;
 }
 
@@ -615,21 +619,46 @@ textarea {
 /*--------------------------------------------------------------
 # Layouts
 --------------------------------------------------------------*/
-/*--------------------------------------------------------------
-# Components
---------------------------------------------------------------*/
-/* Navigation
---------------------------------------------- */
+.no-sidebar .site {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-areas: "header" "main" "footer";
+}
+
 .site-header {
   background: url("/wp-content/uploads/2021/08/hflag.png") no-repeat left top 100%;
   max-height: 412px;
 }
 
 .site-branding {
-  padding: 6.23em 0;
+  padding: 3.9em 0;
   background: radial-gradient(100% 1912.82% at 100% 49.88%, #011C17 0%, #287567 45.9%, rgba(1, 28, 23, 0.26) 100%);
 }
 
+.text-center {
+  text-align: center;
+}
+
+.site-footer {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  background: linear-gradient(179.98deg, #2F7E70 -0.71%, #011C17 99.98%);
+}
+
+.container {
+  max-width: 1430px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0.5em 0;
+}
+
+/*--------------------------------------------------------------
+# Components
+--------------------------------------------------------------*/
+/* Navigation
+--------------------------------------------- */
 .main-navigation {
   display: block;
   width: 100%;
@@ -733,6 +762,10 @@ textarea {
   margin: 0 0 1.5em;
 }
 
+.black-box {
+  background: #000;
+}
+
 /* Comments
 --------------------------------------------- */
 .comment-content a {
@@ -778,7 +811,6 @@ textarea {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  text-align: center;
 }
 .wp-caption .wp-caption-text {
   margin: 0.8075em 0;
@@ -800,6 +832,33 @@ textarea {
   display: inline-block;
   text-align: center;
   width: 100%;
+  max-width: 415px;
+  height: 627px;
+  background: #fff;
+  color: #5B5B5B;
+  font-size: 15px;
+  position: relative;
+}
+
+.undertitle {
+  color: #fff;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.undertitle span {
+  color: #fff;
+  display: inline-flex;
+  width: 321px;
+  height: 53px;
+  background: #B90000;
+  vertical-align: top;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0 0 45px 45px;
+  font-size: 23px;
 }
 
 .gallery-columns-2 {
@@ -920,7 +979,6 @@ textarea {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */

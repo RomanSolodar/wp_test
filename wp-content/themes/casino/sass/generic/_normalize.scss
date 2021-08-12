@@ -30,6 +30,9 @@ body {
 
 main {
 	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
 }
 
 /**
@@ -38,8 +41,9 @@ main {
  */
 
 h1 {
-	font-size: 2em;
-	margin: 0.67em 0;
+	font-size: 1.66em;
+	margin: 1em 0 0.1em;
+	font-weight: 400;
 }
 
 /* Grouping content
