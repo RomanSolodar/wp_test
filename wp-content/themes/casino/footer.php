@@ -25,7 +25,9 @@
 //				printf( esc_html__( 'Theme: %1$s by %2$s.', 'casino' ), 'casino', '<a href="http://underscores.me/">Roman Solodar</a>' );
 //				?>
             <p>
-                18+ Our site offers different selections of social games. This website is free to play and all games won in this website cannot be converted into money currency. This site is for a mature audience 18+, no money or prizes can be won it is purely for free to play only.
+                18+ Our site offers different selections of social games. This website is free to play and all games won in this website cannot be converted into money currency. This site is for a mature audience 18+, no money or prizes can be won it is purely for free to play only.<br>
+                <div class="aligncenter edge">18+</div>
+                <div></div>
             </p>
 		</div>
         <!-- .site-info -->

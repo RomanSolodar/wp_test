@@ -16,10 +16,12 @@ if ( have_posts() ) : ?>
                 echo '<div class="undertitle"><span>', the_field( 'undertitle'), '</span></div>';
             endif;
             ?>
-            <div class="cscontent"><?php the_content(); ?></div>
             <div class="rating"><?php the_field('rating'); ?></div>
             <div class="vote"><?php the_field('vote'); ?></div>
+            <div class="upto">Up To:</div>
             <div class="price"><?php the_field('price'); ?></div>
+            <div class="medal"><img src="<?php the_field('medal'); ?>"></div>
+            <div class="cscontent"><?php the_content(); ?></div>
             <div class="button"> <a href="<?php the_field('l-button'); ?>">PLAY NOW</a></div>
 
 

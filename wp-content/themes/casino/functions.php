@@ -179,72 +179,72 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 }
 
 // Creating a Casinos Post Type
-//function casinos_post_type() {
-//    $labels = array(
-//        'name'                => __( 'Casinos' ),
-//        'singular_name'       => __( 'Casino'),
-//        'menu_name'           => __( 'Casinos'),
-//        'parent_item_colon'   => __( 'Parent Casino'),
-//        'all_items'           => __( 'All Casinos'),
-//        'view_item'           => __( 'View Casino'),
-//        'add_new_item'        => __( 'Add New Casino'),
-//        'add_new'             => __( 'Add New'),
-//        'edit_item'           => __( 'Edit Casino'),
-//        'update_item'         => __( 'Update Casino'),
-//        'search_items'        => __( 'Search Casino'),
-//        'not_found'           => __( 'Not Found'),
-//        'not_found_in_trash'  => __( 'Not found in Trash')
-//    );
-//    $args = array(
-//        'label'               => __( 'casino'),
-//        'description'         => __( '____'),
-//        'labels'              => $labels,
-//        'supports'            => array( 'title', 'editor', 'excerpt', 'author', 'thumbnail', 'revisions', 'custom-fields'),
-//        'public'              => true,
-//        'hierarchical'        => true,
-//        'show_ui'             => true,
-//        'show_in_menu'        => true,
-//        'show_in_nav_menus'   => true,
-//        'show_in_admin_bar'   => true,
-//        'has_archive'         => true,
-//        'can_export'          => true,
-//        'exclude_from_search' => false,
-//        'yarpp_support'       => true,
-//        'taxonomies' 	      => array('post_tag'),
-//        'publicly_queryable'  => true,
-//        'capability_type'     => 'post'
-//    );
-//    register_post_type( 'casinos', $args );
-//}
-//add_action( 'init', 'casinos_post_type', 0 );
-//
-//// create Taxonomy for Custom Post Type
-//add_action( 'init', 'create_casinos_custom_taxonomy', 0 );
-//
-////create a custom taxonomy name it "type" for casinos
-//function create_casinos_custom_taxonomy() {
-//
-//    $labels = array(
-//        'name' => _x( 'Types', 'taxonomy general name' ),
-//        'singular_name' => _x( 'Type', 'taxonomy singular name' ),
-//        'search_items' =>  __( 'Search Types' ),
-//        'all_items' => __( 'All Types' ),
-//        'parent_item' => __( 'Parent Type' ),
-//        'parent_item_colon' => __( 'Parent Type:' ),
-//        'edit_item' => __( 'Edit Type' ),
-//        'update_item' => __( 'Update Type' ),
-//        'add_new_item' => __( 'Add New Type' ),
-//        'new_item_name' => __( 'New Type Name' ),
-//        'menu_name' => __( 'Types' ),
-//    );
-//
-//    register_taxonomy('types',array('casinos'), array(
-//        'hierarchical' => true,
-//        'labels' => $labels,
-//        'show_ui' => true,
-//        'show_admin_column' => true,
-//        'query_var' => true,
-//        'rewrite' => array( 'slug' => 'type' ),
-//    ));
-//}
+function casinos_post_type() {
+    $labels = array(
+        'name'                => __( 'Casinos' ),
+        'singular_name'       => __( 'Casino'),
+        'menu_name'           => __( 'Casinos'),
+        'parent_item_colon'   => __( 'Parent Casino'),
+        'all_items'           => __( 'All Casinos'),
+        'view_item'           => __( 'View Casino'),
+        'add_new_item'        => __( 'Add New Casino'),
+        'add_new'             => __( 'Add New'),
+        'edit_item'           => __( 'Edit Casino'),
+        'update_item'         => __( 'Update Casino'),
+        'search_items'        => __( 'Search Casino'),
+        'not_found'           => __( 'Not Found'),
+        'not_found_in_trash'  => __( 'Not found in Trash')
+    );
+    $args = array(
+        'label'               => __( 'casino'),
+        'description'         => __( '____'),
+        'labels'              => $labels,
+        'supports'            => array( 'title', 'editor', 'excerpt', 'author', 'thumbnail', 'revisions', 'custom-fields'),
+        'public'              => true,
+        'hierarchical'        => true,
+        'show_ui'             => true,
+        'show_in_menu'        => true,
+        'show_in_nav_menus'   => true,
+        'show_in_admin_bar'   => true,
+        'has_archive'         => true,
+        'can_export'          => true,
+        'exclude_from_search' => false,
+        'yarpp_support'       => true,
+        'taxonomies' 	      => array('post_tag'),
+        'publicly_queryable'  => true,
+        'capability_type'     => 'post'
+    );
+    register_post_type( 'casinos', $args );
+}
+add_action( 'init', 'casinos_post_type', 0 );
+
+// create Taxonomy for Custom Post Type
+add_action( 'init', 'create_casinos_custom_taxonomy', 0 );
+
+//create a custom taxonomy name it "type" for casinos
+function create_casinos_custom_taxonomy() {
+
+    $labels = array(
+        'name' => _x( 'Types', 'taxonomy general name' ),
+        'singular_name' => _x( 'Type', 'taxonomy singular name' ),
+        'search_items' =>  __( 'Search Types' ),
+        'all_items' => __( 'All Types' ),
+        'parent_item' => __( 'Parent Type' ),
+        'parent_item_colon' => __( 'Parent Type:' ),
+        'edit_item' => __( 'Edit Type' ),
+        'update_item' => __( 'Update Type' ),
+        'add_new_item' => __( 'Add New Type' ),
+        'new_item_name' => __( 'New Type Name' ),
+        'menu_name' => __( 'Types' ),
+    );
+
+    register_taxonomy('types',array('casinos'), array(
+        'hierarchical' => true,
+        'labels' => $labels,
+        'show_ui' => true,
+        'show_admin_column' => true,
+        'query_var' => true,
+        'rewrite' => array( 'slug' => 'type' ),
+    ));
+}
 
