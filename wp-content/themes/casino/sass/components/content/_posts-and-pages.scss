@@ -2,6 +2,10 @@
 	display: block;
 }
 
+body:not(.home) h1 {
+	margin-top: 100px;
+}
+
 .post,
 .page {
 	margin: 0;
@@ -14,7 +18,12 @@
 .page-content,
 .entry-content,
 .entry-summary {
-	margin: 1.5em 0 0;
+	margin: .5em 0 0;
+
+	@media (min-width: 320px) and (max-width: 480px) {
+		padding-left: 1em;
+		padding-right: 1em;
+	}
 }
 
 .page-links {
@@ -23,4 +32,22 @@
 }
 .black-box {
 	background: #000;
+
+	p {
+		margin-bottom: 1.5em;
+		margin-top: 0;
+	}
+}
+.black-gradient {
+	background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+}
+.age {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	border: 2px solid #fff;
+	font-size: 18px;
+	display: flex !important;
+	align-items: center;
+	justify-content: center;
 }

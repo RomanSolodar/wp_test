@@ -4,6 +4,13 @@
     <content url="file://$MODULE_DIR$">
       <excludeFolder url="file://$MODULE_DIR$/.idea/dataSources" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/composer" />
+      <excludeFolder url="file://$MODULE_DIR$/wp-content/themes/twentytwentyone" />
+      <excludeFolder url="file://$MODULE_DIR$/wp-content/uploads" />
+      <excludeFolder url="file://$MODULE_DIR$/node_modules" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor" />
+      <excludeFolder url="file://$MODULE_DIR$/wp-admin" />
+      <excludeFolder url="file://$MODULE_DIR$/wp-includes" />
+      <excludeFolder url="file://$MODULE_DIR$/wp-content/plugins/advanced-custom-fields" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

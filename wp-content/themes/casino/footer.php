@@ -26,8 +26,12 @@
 //				?>
             <p>
                 18+ Our site offers different selections of social games. This website is free to play and all games won in this website cannot be converted into money currency. This site is for a mature audience 18+, no money or prizes can be won it is purely for free to play only.<br>
-                <div class="aligncenter edge">18+</div>
-                <div></div>
+                <div class="aligncenter age">18+</div>
+                <p>
+                    <a href="/privacy-policy/">Privacy Policy</a><br>
+                    <a href="/terms-conditions/">Terms & Conditions</a><br>
+                    <a href="/cookie-policy/">Cookie Policy</a><br>
+                </p>
             </p>
 		</div>
         <!-- .site-info -->

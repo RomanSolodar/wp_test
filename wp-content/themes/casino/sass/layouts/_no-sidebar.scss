@@ -24,10 +24,22 @@
 	@include center-block;
 	width: 100%;
 	background: linear-gradient(179.98deg, #2F7E70 -0.71%, #011C17 99.98%);
+	padding: 70px 0 50px;
+
+	a {
+		font-size: 20px;
+		text-decoration: none;
+	}
+
+	@media (min-width: 320px) and (max-width: 480px) {
+		padding-left: 1em;
+		padding-right: 1em;
+	}
 }
 .container {
 	max-width: $max-width;
 	margin-right: auto;
 	margin-left: auto;
 	padding: .5em 0 2.5em;
+
 }

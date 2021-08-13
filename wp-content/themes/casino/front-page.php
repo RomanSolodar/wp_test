@@ -45,6 +45,25 @@ get_header();
             <?php get_template_part('loop/loop-casino'); ?>
         </div>
 
+        <?php
+
+        // ---- This query gets second type posts of casinos but I had too little tine to visualize it separately -----
+
+        $query = new WP_Query( array(
+            'post_type' => 'casinos',
+            'tax_query' => array(
+                array (
+                    'taxonomy' => 'types',
+                    'field' => 'slug',
+                    'terms' => 'second',
+                )
+            ),
+        ) );
+                echo '<pre style="color:black">';
+//                print_r($query);
+                echo '</pre>';
+        ?>
+
     </main><!-- #main -->
 
 <?php

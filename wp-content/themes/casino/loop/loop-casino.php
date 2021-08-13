@@ -18,7 +18,8 @@ if ( have_posts() ) : ?>
             ?>
             <div class="rating"><?php the_field('rating'); ?></div>
             <div class="vote"><?php the_field('vote'); ?></div>
-            <div class="upto">Up To:</div>
+            <div class="stars"><img src="/wp-content/uploads/2021/08/Screenshot_2.png"></div>
+            <div class="upto"><?php the_field('text_up_to'); ?></div>
             <div class="price"><?php the_field('price'); ?></div>
             <div class="medal"><img src="<?php the_field('medal'); ?>"></div>
             <div class="cscontent"><?php the_content(); ?></div>

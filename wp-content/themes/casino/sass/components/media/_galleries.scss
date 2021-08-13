@@ -2,6 +2,15 @@
 	margin-bottom: 1.5em;
 	display: grid;
 	grid-gap: 1.5em;
+
+	img {
+		max-height: 234px;
+	}
+
+	@media (min-width: 320px) and (max-width: 480px) {
+		display: block;
+	}
+
 }
 
 .gallery-item {
@@ -35,28 +44,37 @@
 	top: 0;
 	width: 100%;
 	text-align: center;
+
+	span {
+		color: #fff;
+		display: inline-flex;
+		width: 321px;
+		height: 53px;
+		background: #B90000;
+		vertical-align: top;
+		align-items: center;
+		justify-content: center;
+		border-radius: 0 0 45px 45px;
+		font-size: 23px;
+		font-family: Montserrat;
+		font-weight: 600;
+	}
 }
-.undertitle span {
-	color: #fff;
-	display: inline-flex;
-	width: 321px;
-	height: 53px;
-	background: #B90000;
-	vertical-align: top;
-	align-items: center;
-	justify-content: center;
-	border-radius: 0 0 45px 45px;
-	font-size: 23px;
-	//font-family: 'Montserrat';
-}
+
 .rating {
 	height: 66px;
 	width: 66px;
 	background: #FFDB00;
 	font-weight: 600;
 	border-radius: 50%;
+	display: -webkit-inline-box;
+	display: -ms-inline-flexbox;
 	display: inline-flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
 	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
 	align-items: center;
 	font-size: 30px;
 	position: absolute;
@@ -64,6 +82,8 @@
 	left: 50%;
 	-webkit-transform: translateX(-50%);
 	transform: translateX(-50%);
+	font-family: Montserrat;
+	font-style: normal;
 }
 .gallery-item:nth-child(n+4) .rating {
 	top: .7em;
@@ -72,10 +92,14 @@
 .medal {
 	position: absolute;
 	right: 1.7em;
+	margin-top: .5em;
 }
 .gallery-item:nth-child(n+4) .medal {
-	top: .7em;
-	left: 1.7em;
+	top: 0;
+	left: auto;
+	right: 1.4em;
+	width: 52px;
+	height: auto;
 }
 .vote {
 	font-size: 30px;
@@ -86,8 +110,9 @@
 .upto {
 	color: #5B5B5B;
 	font-size: 20px;
-	margin: 2em auto 0;
+	margin: 1em auto 0;
 	font-weight: 500;
+	min-height: 1.5em;
 }
 .price {
 	color: #FF2B2B;
@@ -97,7 +122,6 @@
 .cscontent {
 	text-align: left;
 	margin: .2em 1em;
-	height: 6.5em;
 	display: flex;
 	align-items: flex-end;
 	flex-direction: row;

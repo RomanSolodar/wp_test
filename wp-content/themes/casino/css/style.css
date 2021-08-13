@@ -654,6 +654,17 @@ textarea {
   margin-right: auto;
   width: 100%;
   background: linear-gradient(179.98deg, #2F7E70 -0.71%, #011C17 99.98%);
+  padding: 70px 0 50px;
+}
+.site-footer a {
+  font-size: 20px;
+  text-decoration: none;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .site-footer {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
 }
 
 .container {
@@ -760,6 +771,10 @@ textarea {
   display: block;
 }
 
+body:not(.home) h1 {
+  margin-top: 100px;
+}
+
 .post,
 .page {
   margin: 0;
@@ -772,7 +787,15 @@ textarea {
 .page-content,
 .entry-content,
 .entry-summary {
-  margin: 1.5em 0 0;
+  margin: 0.5em 0 0;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .page-content,
+.entry-content,
+.entry-summary {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
 }
 
 .page-links {
@@ -782,6 +805,32 @@ textarea {
 
 .black-box {
   background: #000;
+}
+.black-box p {
+  margin-bottom: 1.5em;
+  margin-top: 0;
+}
+
+.black-gradient {
+  background: -webkit-gradient(linear, left top, left bottom, from(#000000), to(rgba(0, 0, 0, 0)));
+  background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+.age {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  font-size: 18px;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 /* Comments
@@ -845,6 +894,14 @@ textarea {
   display: -ms-grid;
   display: grid;
   grid-gap: 1.5em;
+}
+.gallery img {
+  max-height: 234px;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .gallery {
+    display: block;
+  }
 }
 
 .gallery-item {
@@ -911,7 +968,6 @@ textarea {
   width: 100%;
   text-align: center;
 }
-
 .undertitle span {
   color: #fff;
   display: -webkit-inline-box;
@@ -929,6 +985,8 @@ textarea {
           justify-content: center;
   border-radius: 0 0 45px 45px;
   font-size: 23px;
+  font-family: Montserrat;
+  font-weight: 600;
 }
 
 .rating {
@@ -941,17 +999,19 @@ textarea {
   display: -ms-inline-flexbox;
   display: inline-flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   font-size: 30px;
   position: absolute;
   top: -60px;
   left: 50%;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
+  font-family: Montserrat;
+  font-style: normal;
 }
 
 .gallery-item:nth-child(n+4) .rating {
@@ -962,11 +1022,15 @@ textarea {
 .medal {
   position: absolute;
   right: 1.7em;
+  margin-top: 0.5em;
 }
 
 .gallery-item:nth-child(n+4) .medal {
-  top: 0.7em;
-  left: 1.7em;
+  top: 0;
+  left: auto;
+  right: 1.4em;
+  width: 52px;
+  height: auto;
 }
 
 .vote {
@@ -979,8 +1043,9 @@ textarea {
 .upto {
   color: #5B5B5B;
   font-size: 20px;
-  margin: 2em auto 0;
+  margin: 1em auto 0;
   font-weight: 500;
+  min-height: 1.5em;
 }
 
 .price {
@@ -992,7 +1057,6 @@ textarea {
 .cscontent {
   text-align: left;
   margin: 0.2em 1em;
-  height: 6.5em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
